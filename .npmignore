@@ -1,0 +1,10 @@
+.idea
+node_modules
+src
+docs
+coverage
+.babelrc
+gulpfile.js
+esdoc.json
+.istanbul.yml
+test
