@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/MitMaro/mitmaro-gulp-babel-mocha.git"
   },
-  "main": "lib/BuildMocha.js",
+  "main": "lib/BabelMocha.js",
   "dependencies": {
     "gulp-util": "^3.0.7",
     "mocha": "^2.3.3"
@@ -30,7 +30,7 @@
     "esdoc": "^0.4.3",
     "gulp": "^3.9.0",
     "gulp-task-help": "0.0.2",
-    "sinon": "^1.17.2",
+    "sinon": "^1.17.0",
     "sinon-chai": "^2.8.0",
     "yargs": "^3.29.0"
   },
