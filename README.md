@@ -17,10 +17,11 @@ A reusable gulp task for a Babel Mocha.
 ## Options
 
 
-Option | Type | Default
----|---|---
-coverage|boolean|false
-bail|boolean|false
+Option | Type | Default | Description
+---|---|---|---
+coverage|boolean|false|Enable coverage report generation
+bail|boolean|false|Stop running tests on first failure
+files|string &#124; string[]||Files or directories to find tests
 
 ## License
 

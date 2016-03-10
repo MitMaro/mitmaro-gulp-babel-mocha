@@ -48,6 +48,23 @@ describe('BabelMocha', () => {
 		expect(stubs.childProcess.spawn.firstCall.args[1]).to.include('--bail');
 	});
 
+	it('should pass test file to mocha process', () => {
+		let task = mocha({
+			files: 'filename'
+		});
+		task();
+		expect(stubs.childProcess.spawn.firstCall.args[1]).to.include('filename');
+	});
+
+	it('should pass test files to mocha process', () => {
+		let task = mocha({
+			files: ['filename1', 'filename2']
+		});
+		task();
+		expect(stubs.childProcess.spawn.firstCall.args[1]).to.include('filename1');
+		expect(stubs.childProcess.spawn.firstCall.args[1]).to.include('filename2');
+	});
+
 	it('should finish without error on successful exit', (done) => {
 		let task = mocha({
 			bail: true
